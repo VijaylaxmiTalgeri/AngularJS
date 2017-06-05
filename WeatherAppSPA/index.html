@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="weatherForecastApp">
+	<head>
+		<title>Weather Forecast SPA App</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<style>
+            html, body, input, select, textarea
+            {
+                font-size: 1.05em !important;
+            }
+        </style>
+
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">AngularJS Weather</a>
+					</div>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#!/"><i class="fa fa-home"></i> Home</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="container">
+			<div ng-view></div>
+		</div>
+		<!-- Load Angular via CDN -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/routes/route.js"></script>
+		<script src="js/services/services.js"></script>
+		<script src="js/controllers/controllers.js"></script>
+		<script src="js/directives/directive.js"></script>
+	</body>
+</html>
